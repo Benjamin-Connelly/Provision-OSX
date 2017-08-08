@@ -15,6 +15,7 @@ alias ls='ls -F'
 #Connections -- grep LISTEN
 alias listen='sudo lsof -n -P -i +c 15 | grep LISTEN'
 alias hg='history|grep '
+alias hn='history | cut -c 8- | grep '
 alias grep='grep --color=auto'
 alias bc='bc -l'        #calculator with math support
 alias fastping='ping -c 100 -s.2'
