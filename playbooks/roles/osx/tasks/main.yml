@@ -1,0 +1,5 @@
+--- # include homebrew
+- include: homebrew.yml
+
+  #- name: 'Save screenshots to Downloads'
+  # shell: defaults write com.apple.screencapture location ~/Screenshots

@@ -1,0 +1,60 @@
+---
+- name: Update Homebrew
+  homebrew: update_homebrew=yes
+
+- name: Tap fonts
+  homebrew_tap: tap=caskroom/fonts state=present
+
+- name: Install libraries with Homebrew
+  homebrew: name={{ item }} state=latest
+  with_items:
+    - ack
+    - awscli
+    - curl
+    - fasd
+    - git
+    - hub
+    - nmap
+    - node
+    - python
+    - python3
+    - readline
+    - rename
+    - ssh-copy-id
+    - vim
+    - watch
+    - wget
+    - tree
+    - openssl
+    - coreutils
+    - findutils
+    - mosh
+    - cask
+    - youtube-dl
+    - htop
+    - tmux
+
+- name: Install apps with Homebrew Cask
+  homebrew_cask: name={{ item }} state=present
+  with_items:
+    - qlcolorcode
+    - google-chrome
+    - au-lab
+    - xld
+    - soundflower
+    - alfred
+    - postman
+    - aerial
+    - qlstephen
+    - qlmarkdown
+    - quicklook-json
+    - qlprettypatch
+    - quicklook-csv
+    - vlc
+    - vagrant
+    - vagrant-manager
+    - xquartz
+    - appcleaner
+
+- name: Cleanup Brew packages
+  command: brew cleanup

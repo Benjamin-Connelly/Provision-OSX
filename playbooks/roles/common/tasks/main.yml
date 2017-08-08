@@ -1,12 +1,14 @@
 ---
 - name: Symlink my dotfiles
-  file: src=~/dotfiles//{{ item }}
+  file: src=~/.dotfiles/home/{{ item }}
         dest=~/{{ item }}
         state=link
         force=yes
   with_items:
-    - .vim
-    - .bash
+    - .vimrc
+    - .bashrc
+    - .bash_profile
+    - .profile
     - .gitconfig
 
 - name: Clone Vundle
