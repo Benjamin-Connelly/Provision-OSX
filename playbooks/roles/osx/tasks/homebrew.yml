@@ -10,26 +10,26 @@
   with_items:
     - ack
     - awscli
+    - cask
+    - coreutils
     - curl
     - fasd
+    - findutils
     - git
     - hub
+    - mosh
     - nmap
     - node
+    - openssl
     - python
     - python3
     - readline
     - rename
     - ssh-copy-id
+    - tree
     - vim
     - watch
     - wget
-    - tree
-    - openssl
-    - coreutils
-    - findutils
-    - mosh
-    - cask
     - youtube-dl
     - htop
     - tmux
@@ -37,24 +37,24 @@
 - name: Install apps with Homebrew Cask
   homebrew_cask: name={{ item }} state=present
   with_items:
-    - qlcolorcode
-    - google-chrome
-    - au-lab
-    - xld
-    - soundflower
-    - alfred
-    - postman
+    - xquartz
     - aerial
-    - qlstephen
+    - alfred
+    - appcleaner
+    - au-lab
+    - google-chrome
+    - postman
+    - qlcolorcode
     - qlmarkdown
-    - quicklook-json
     - qlprettypatch
+    - qlstephen
     - quicklook-csv
-    - vlc
+    - quicklook-json
+    - soundflower
     - vagrant
     - vagrant-manager
-    - xquartz
-    - appcleaner
+    - vlc
+    - xld
 
 - name: Cleanup Brew packages
   command: brew cleanup
