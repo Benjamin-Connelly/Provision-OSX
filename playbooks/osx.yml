@@ -1,6 +1,0 @@
----
-- hosts: localhost
-  accelerate: true
-  roles:
-    - role: osx
-    - role: common

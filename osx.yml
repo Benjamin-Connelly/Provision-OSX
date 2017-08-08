@@ -1,0 +1,11 @@
+---
+- hosts: localhost
+  connection: local
+  gather_facts: no
+  accelerate: true
+  vars:
+    me: shotarok
+  roles:
+    - { role: gitconfig }
+    - { role: osx  }
+    - { role: common }
