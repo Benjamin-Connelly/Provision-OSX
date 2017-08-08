@@ -17,6 +17,7 @@
     - findutils
     - git
     - hub
+    - jq
     - mosh
     - nmap
     - node
@@ -41,8 +42,10 @@
     - aerial
     - alfred
     - appcleaner
+    - atom
     - au-lab
     - google-chrome
+    - hipchat
     - postman
     - qlcolorcode
     - qlmarkdown
@@ -50,9 +53,13 @@
     - qlstephen
     - quicklook-csv
     - quicklook-json
+    - skype
+    - slack
     - soundflower
+    - tunnelblick
     - vagrant
     - vagrant-manager
+    - virtualbox
     - vlc
     - xld
 
