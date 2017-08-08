@@ -1,4 +1,4 @@
-# My OS X Provisioning
+# OS X Provisioning
 Ansible files for OS X Provisioning.
 ## How to use
 ### Preparation
@@ -19,3 +19,5 @@ cd .dotfiles
 git submodule update # for ansible-modules-extra
 HOMEBREW_CASK_OPTS="--appdir=/Applications" ansible-playbook osx.yml
 ```
+## Thank you
+Shotarok helped me work out some kinks -  https://github.com/shotarok/osx-provisioning 
