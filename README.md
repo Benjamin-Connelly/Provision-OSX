@@ -17,5 +17,5 @@ brew install ansible
 git clone git@github.com:bc-drop/dotfiles.git ~/.dotfiles/
 cd .dotfiles
 git submodule update # for ansible-modules-extra
-HOMEBREW_CASK_OPTS="--appdir=/Applications" ansible-playbook playbooks/osx.yml
+HOMEBREW_CASK_OPTS="--appdir=/Applications" ansible-playbook osx.yml
 ```
