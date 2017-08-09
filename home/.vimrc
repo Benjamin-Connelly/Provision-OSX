@@ -35,7 +35,9 @@ cmap w!! w !sudo tee % >/dev/null
 " VimAirline
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#left_alt_sep = '>'
-let g:airline_solarized_bg='dark'
+let g:airline_theme='minimalist'
 
 
 syntax on
+
+colorscheme dracula
