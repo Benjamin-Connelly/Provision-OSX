@@ -1,0 +1,8 @@
+---
+- hosts: localhost
+  connection: local
+  gather_facts: no
+  accelerate: true
+  roles:
+    - { role: common }
+    - { role: gitconfig }

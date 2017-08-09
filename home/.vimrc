@@ -24,6 +24,8 @@ Plugin 'scrooloose/syntastic'
 Plugin 'bling/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'pearofducks/ansible-vim'
+Plugin 'gabrielelana/vim-markdown'
+Plugin 'https://github.com/shime/vim-livedown.git'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
