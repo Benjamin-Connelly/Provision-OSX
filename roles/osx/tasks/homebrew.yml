@@ -22,6 +22,7 @@
     - nmap
     - node
     - openssl
+    - pandoc
     - python
     - python3
     - readline
@@ -47,6 +48,7 @@
     - google-chrome
     - hipchat
     - mattr-slate
+    - mactex
     - postman
     - qlcolorcode
     - qlmarkdown
