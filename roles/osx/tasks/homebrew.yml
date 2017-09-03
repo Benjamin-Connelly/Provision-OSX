@@ -11,6 +11,7 @@
     - ack
     - awscli
     - cask
+    - ccat
     - coreutils
     - curl
     - fasd
@@ -18,6 +19,7 @@
     - git
     - hub
     - jq
+    - mas
     - mosh
     - nmap
     - node
@@ -27,7 +29,9 @@
     - python3
     - readline
     - rename
+    - screenfetch
     - ssh-copy-id
+    - tldr
     - tree
     - vim
     - watch
@@ -64,6 +68,7 @@
     - vagrant-manager
     - virtualbox
     - vlc
+    - whatsapp
     - xld
 
 - name: Cleanup Brew packages
