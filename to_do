@@ -1,4 +1,6 @@
-Add support for NPM packages
+# To do
 
-npm install -g vtop
+[] Finish up Ubuntu install
+[] Add support for NPM packages
+[] npm install -g vtop
 
