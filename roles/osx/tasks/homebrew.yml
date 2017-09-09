@@ -1,9 +1,11 @@
 ---
+- name: Taps that are useful
+  homebrew_tap: >
+    tap=caskroom/fonts,clangen/musikcube
+    state=present
+
 - name: Update Homebrew
   homebrew: update_homebrew=yes
-
-- name: Tap fonts
-  homebrew_tap: tap=caskroom/fonts state=present
 
 - name: Install libraries with Homebrew
   homebrew: name={{ item }} state=latest
@@ -21,6 +23,7 @@
     - jq
     - mas
     - mosh
+    - musickube
     - nmap
     - node
     - openssl
