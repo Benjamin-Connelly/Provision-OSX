@@ -25,7 +25,6 @@
     - mosh
     - musickube
     - nmap
-    - ngrok
     - node
     - openssl
     - p7zip
@@ -59,6 +58,7 @@
     - hipchat
     - mattr-slate
     - mactex
+    - ngrok
     - postman
     - qlcolorcode
     - qlmarkdown
