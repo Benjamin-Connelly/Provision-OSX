@@ -26,6 +26,9 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'pearofducks/ansible-vim'
 Plugin 'gabrielelana/vim-markdown'
 Plugin 'https://github.com/shime/vim-livedown.git'
+Plugin 'https://github.com/tpope/vim-endwise.git'
+Plugin 'https://github.com/tpope/vim-surround.git'
+Plugin 'https://github.com/tpope/vim-commentary.git'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
