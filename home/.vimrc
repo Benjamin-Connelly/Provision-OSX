@@ -44,5 +44,5 @@ let g:airline_theme='minimalist'
 
 
 syntax on
-
+set laststatus=2
 colorscheme dracula
