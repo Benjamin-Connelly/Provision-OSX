@@ -17,6 +17,7 @@
     - coreutils
     - curl
     - fasd
+    - fd
     - findutils
     - git
     - hub
