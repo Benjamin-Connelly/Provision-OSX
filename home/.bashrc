@@ -3,6 +3,8 @@ export PS1="\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\] "
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
 
+source ~/.ds/ds.sh
+
 ## Some Aliases
 alias ll='ls -al'
 alias vi='vim'
@@ -51,6 +53,7 @@ export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
 function lg() {
     git add .
     git commit -a -m "$1"
+    git pull
     git push
 }
 # End Lazy Git
@@ -59,3 +62,6 @@ PS1="$PS1\n\$ "
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
+
+
+[ -r "${HOME}/.ds/ds.sh" ] && source "${HOME}/.ds/ds.sh" "${HOME}/.ds" 1>&2
