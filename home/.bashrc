@@ -29,8 +29,8 @@ alias augmedix='cd ~/srv/nclouds/augmedix/DevOps/'
 alias cdr='cd ../../recipes'
 alias cdt='cd ../templates/default'
 # Copy to clipboard on Mac or Linux
-alias copy="$(which pbcopy &> /dev/null && echo pbcopy || echo 'xclip -sel clip' )"
-alias paste='pbpaste'
+alias ctrlc='xclip -selection clipboard -i'
+alias ctrlv='xclip -selection clipboard -o'
 # Pipe my public key to my clipboard.
 alias pubkeygmail="more ~/.ssh/benjamin.t.connelly@gmail.com.pub | copy && echo '=> Public key copied to pasteboard.'"
 alias pubkeynclouds="more ~/.ssh/ben@nclouds.com.pub | copy && echo '=> Public key copied to pasteboard.'"
