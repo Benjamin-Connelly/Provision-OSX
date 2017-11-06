@@ -1,8 +1,7 @@
 ---
-- hosts: localhost
-  connection: local
-  gather_facts: no
-  accelerate: true
-  roles:
-    - { role: common }
-    - { role: gitconfig }
+- hosts: blahblahblah
+  sudo: yes
+  tasks:
+  - user: name=bconnelly comment="My User" group=wheel
+  - name: Placing key
+    authorized_key: user=myuser key="{{ lookup('file', './files/benjamin.t.connelly@gmail.pub') }}"

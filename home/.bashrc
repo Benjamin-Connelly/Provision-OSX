@@ -19,6 +19,20 @@ alias wget='wget -c'
 alias j='jobs -l'
 alias vssh='vagrant ssh'
 alias upload='knife cookbook upload '
+alias rc='vim ~/.bashrc'
+alias authkeys='vim ~/.ssh/authorized_keys'
+alias hosts='vim ~/.ssh/known_hosts'
+alias vi='vim'
+alias augmedix='cd ~/srv/nclouds/augmedix/DevOps/'
+alias cdr='cd ../../recipes'
+alias cdt='cd ../templates/default'
+# Copy to clipboard on Mac or Linux
+alias copy="$(which pbcopy &> /dev/null && echo pbcopy || echo 'xclip -sel clip' )"
+alias paste='pbpaste'
+# Pipe my public key to my clipboard.
+alias pubkeygmail="more ~/.ssh/benjamin.t.connelly@gmail.com.pub | copy && echo '=> Public key copied to pasteboard.'"
+alias pubkeynclouds="more ~/.ssh/ben@nclouds.com.pub | copy && echo '=> Public key copied to pasteboard.'"
+
 
 #Bash Completion
 if [ -f `brew --prefix`/etc/bash_completion.d/git-completion.bash ]; then
