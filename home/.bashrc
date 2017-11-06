@@ -51,6 +51,35 @@ alias upd="source ~/.bash_profile"          # upd:          Sources this file af
 alias create="touch"                        # create:       Uses the word create rather than touch to create a new file (not really a shortcut :/)
                                             #               this way it makes more sense to me
 alias todo="todolist"                       # todo:         Call the todolist cmdline app (documentation: http://todolist.site/)
+alias hidden_files_yes="defaults write com.apple.finder AppleShowAllFiles YES"
+alias hidden_files_no="defaults write com.apple.finder AppleShowAllFiles NO"
+
+#   ---------------------------
+#   2. SEARCHING
+#   ---------------------------
+
+alias search="find . -name "                   # search:    Quickly search for file
+ff () { /usr/bin/find . -name "$@" ; }         # ff:        Find file under the current directory
+fstarts () { /usr/bin/find . -name "$@"'*' ; } # fstarts:   Find file whose name starts with a given string
+fends () { /usr/bin/find . -name '*'"$@" ; }   # fends:     Find file whose name ends with a given string
+
+#   spotlight: Search for a file using MacOS Spotlight's metadata
+#   -----------------------------------------------------------
+    spotlight () { mdfind "kMDItemDisplayName == '$@'wc"; }
+
+#   ---------------------------
+#   3. NETWORKING
+#   ---------------------------
+
+alias myip='dig +short myip.opendns.com @resolver1.opendns.com'                    # myip:         Public facing IP Address
+alias netCons='lsof -i'                             # netCons:      Show all open TCP/IP sockets
+alias flushDNS='dscacheutil -flushcache'            # flushDNS:     Flush out the DNS Cache
+alias lsock='sudo /usr/sbin/lsof -i -P'             # lsock:        Display open sockets
+alias lsockU='sudo /usr/sbin/lsof -nP | grep UDP'   # lsockU:       Display only open UDP sockets
+alias lsockT='sudo /usr/sbin/lsof -nP | grep TCP'   # lsockT:       Display only open TCP sockets
+alias ipInfo0='ipconfig getpacket en0'              # ipInfo0:      Get info on connections for en0
+alias ipInfo1='ipconfig getpacket en1'              # ipInfo1:      Get info on connections for en1
+alias openPorts='sudo lsof -i | grep LISTEN'        # openPorts:    All listening connections
 
 #Bash Completion
 if [ -f `brew --prefix`/etc/bash_completion.d/git-completion.bash ]; then
