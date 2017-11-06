@@ -34,7 +34,23 @@ alias ctrlv='xclip -selection clipboard -o'
 # Pipe my public key to my clipboard.
 alias pubkeygmail="more ~/.ssh/benjamin.t.connelly@gmail.com.pub | copy && echo '=> Public key copied to pasteboard.'"
 alias pubkeynclouds="more ~/.ssh/ben@nclouds.com.pub | copy && echo '=> Public key copied to pasteboard.'"
-
+cd() { builtin cd "$@"; ll; }               # Always list directory contents upon 'cd'
+mcd () { mkdir -p "$1" && cd "$1"; }        # mcd:          Makes new Dir and jumps inside
+trash () { command mv "$@" ~/.Trash ; }     # trash:        Moves a file to the MacOS trash
+alias desk='cd ~/Desktop'                   # desk:         Go to the Desktop folder
+alias f='open -a Finder ./'                 # f:            Opens current directory in MacOS Finder
+alias c='clear'                             # c:            Clear terminal display
+prev() { qlmanage -p "$1" >& /dev/null;}    # prev:         Opens the file in MacOS Quicklook Preview
+pdf() { open -a /Applications/Preview.app/ "$1" ;} # pdf:   Opens the file in MacOS Preview
+empty() { rm -rf ~/.Trash/*; }              # empty:        Empties the Trash
+vlc() { open -a /Applications/VLC.app/ "$1" ;}  # vlc:      Open the file with vlc
+app() { open -a /Applications/"$1".app/ ;}  # app:          Opens the application passed as an argument
+alias calc="bc -l"                          # calc:         Starts a cli calculator
+alias show_app="ls /Applications/"          # show_app:     Showing all the app in the Applications folder
+alias upd="source ~/.bash_profile"          # upd:          Sources this file after edits has been made
+alias create="touch"                        # create:       Uses the word create rather than touch to create a new file (not really a shortcut :/)
+                                            #               this way it makes more sense to me
+alias todo="todolist"                       # todo:         Call the todolist cmdline app (documentation: http://todolist.site/)
 
 #Bash Completion
 if [ -f `brew --prefix`/etc/bash_completion.d/git-completion.bash ]; then
