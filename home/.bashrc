@@ -1,5 +1,5 @@
 #Fancy shell prompt
-export PS1="\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\] "
+#export PS1="\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\] "
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
 
@@ -69,7 +69,7 @@ fends () { /usr/bin/find . -name '*'"$@" ; }   # fends:     Find file whose name
 #   3. NETWORKING
 #   ---------------------------
 
-alias myip='dig +short myip.opendns.com @resolver1.opendns.com'                    # myip:         Public facing IP Address
+alias myip='dig +short myip.opendns.com @resolver1.opendns.com | pbcopy'                    # myip:         Public facing IP Address
 alias netCons='lsof -i'                             # netCons:      Show all open TCP/IP sockets
 alias flushDNS='dscacheutil -flushcache'            # flushDNS:     Flush out the DNS Cache
 alias lsock='sudo /usr/sbin/lsof -i -P'             # lsock:        Display open sockets

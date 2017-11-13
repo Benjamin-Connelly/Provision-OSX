@@ -3,6 +3,12 @@ source ~/.bashrc
 export PATH="/usr/local/sbin:$PATH"
 export PATH="/Users/bconnelly/.chefdk/gem/ruby/2.4.0/bin:$PATH"
 
+LP_PS1_PREFIX="\n"
+LP_PS1_POSTFIX="\n# "
+  if [ -f /usr/local/share/liquidprompt ]; then
+    . /usr/local/share/liquidprompt
+  fi
+
 #if [ -d "$HOME/Library/Python/2.7/bin" ]; then
 #    PATH="$HOME/Library/Python/2.7/bin:$PATH"
 #fi
