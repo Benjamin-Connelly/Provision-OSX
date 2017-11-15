@@ -51,6 +51,7 @@ alias create="touch"                        # create:       Uses the word create
 alias todo="todolist"                       # todo:         Call the todolist cmdline app (documentation: http://todolist.site/)
 alias hidden_files_yes="defaults write com.apple.finder AppleShowAllFiles YES"
 alias hidden_files_no="defaults write com.apple.finder AppleShowAllFiles NO"
+alias augssh="ssh -i ~/.ssh/nclouds/augmedix/auw2-prod.pem nclouds@"$1""
 
 #   ---------------------------
 #   2. SEARCHING
