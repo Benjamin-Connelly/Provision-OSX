@@ -11,6 +11,7 @@
   homebrew: name={{ item }} state=latest
   with_items:
     - ack
+    - archey
     - awscli
     - cask
     - ccat
