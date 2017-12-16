@@ -3,7 +3,7 @@
   connection: local
   gather_facts: no
   vars:
-    me: shotarok
+    me: bconnelly ### change to your username
   roles:
     - { role: gitconfig }
     - { role: osx  }
