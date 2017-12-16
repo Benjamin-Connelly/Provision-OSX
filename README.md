@@ -27,7 +27,7 @@ HOMEBREW_CASK_OPTS="--appdir=/Applications" ansible-playbook osx.yml
 You will have to enter your password a couple times when you get to TASK [osx : Install apps with Homebrew Cask]. There are 
 a few options for storing this secrets that you are welcome to explore if you need this to run completely unattended. 
 
-If you want to explore secrets check out [Ansible Vault](https://docs.ansible.com/ansible/2.4/vault.html)or [GitCrypt](https://www.agwa.name/projects/git-crypt/)
+If you want to explore secrets check out [Ansible Vault](https://docs.ansible.com/ansible/2.4/vault.html) or [GitCrypt](https://www.agwa.name/projects/git-crypt/)
 
 
 ## Thank you
