@@ -102,6 +102,13 @@ function lg() {
 }
 # End Lazy Git
 
+# cd.. n 
+function cd_up() {
+  cd $(printf "%0.s../" $(seq 1 $1 ));
+}
+alias 'cd..'='cd_up'
+# end cd.. n
+
 PS1="$PS1\n\$ "
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
