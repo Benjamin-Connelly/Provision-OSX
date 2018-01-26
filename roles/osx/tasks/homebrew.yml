@@ -16,6 +16,7 @@
     - ccat
     - coreutils
     - curl
+    - dark-mode
     - fasd
     - fd
     - findutils
@@ -54,6 +55,7 @@
     - atom
     - au-lab
     - chefdk
+    - docker
     - google-chrome
     - daisydisk
     - hipchat
@@ -69,6 +71,7 @@
     - skype
     - slack
     - soundflower
+    - spectacle
     - tunnelblick
     - vagrant
     - vagrant-manager

@@ -52,6 +52,7 @@ alias todo="todolist"                       # todo:         Call the todolist cm
 alias hidden_files_yes="defaults write com.apple.finder AppleShowAllFiles YES"
 alias hidden_files_no="defaults write com.apple.finder AppleShowAllFiles NO"
 alias augssh="ssh -i ~/.ssh/nclouds/augmedix/auw2-prod.pem nclouds@"$1""
+alias haltallvm="vagrant global-status | grep virtualbox | cut -c 1-9 | while read line; do echo $line; vagrant halt $line; done;"
 
 #   ---------------------------
 #   2. SEARCHING
@@ -64,7 +65,7 @@ fends () { /usr/bin/find . -name '*'"$@" ; }   # fends:     Find file whose name
 
 #   spotlight: Search for a file using MacOS Spotlight's metadata
 #   -----------------------------------------------------------
-    spotlight () { mdfind "kMDItemDisplayName == '$@'wc"; }
+#    spotlight () { mdfind "kMDItemDisplayName == '$@'wc"; }
 
 #   ---------------------------
 #   3. NETWORKING
